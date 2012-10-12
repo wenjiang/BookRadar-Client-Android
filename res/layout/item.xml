@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <LinearLayout android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="5dp">
+       <TableLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:collapseColumns="2"
+          android:stretchColumns="1">
+          <TableRow 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+            <TextView android:id="@+id/book"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="18dp"/>
+            <RatingBar  android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingTop="5dp"
+                android:numStars="5"
+                style="?android:attr/ratingBarStyleSmall"/>
+        </TableRow>
+     </TableLayout>
+  </LinearLayout>
+</LinearLayout>
